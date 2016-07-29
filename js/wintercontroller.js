@@ -1,10 +1,11 @@
 var app = angular.module("mySeasons");
 
-app.controller('$scope', ['winterCtrl', function($scope, $window){
-  $scope.checkForPalindrome = function() { 
+app.controller('winterCtrl', ['$scope', function($scope, $window){
+  $scope.checkForPalindrome = function(string) { 
 	// palindrome is our string
   // get rid of the empty spaces in the array
-     var palindrome = $palindrome.replace(/\s+/g, '');
+  console.log("hello");
+     var palindrome = string.replace(/\s+/g, '');
   // all lowercase letters
      palindrome = palindrome.toLowerCase();
   // new empty string to push to

@@ -7,3 +7,40 @@
     color: #fff;
     padding: 4px 12px;
     margin: 24px 0;
+}    
+
+.summer{
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:8px;
+		height:440px;
+		width:500px;
+		z-index:999;
+		background-color:#fff;
+		opacity:.75;
+		padding:10px;
+		font-size:26px;
+		color:black;
+}
+.winter{
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:8px;
+		height:440px;
+		width:500px;
+		z-index:999;
+		background-color:#fff;
+		opacity:.75;
+		padding:10px;
+		color:black;
+		font-size:26px;
+}
+.pal{
+	float:left;
+	align-content:center;
+	display:block;
+	color:black;
+	}
+button{
+	color:black;
+}	
