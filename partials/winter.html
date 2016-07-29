@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<div>
+<div ng-controller="winterCtrl">
 	<p>Hey it's winter and there is nothing to do, enter some text to see if it is a palindrome.</p>
 	<p>This is a palindrome, "Do geese see God?" also "Never odd or even". Try it!</p>
-	<input type="text" ng-model="palindrome">
-	<button ng-click="checkForPalindrome(palindrome)">Palindrome?</button>
+	<input type="text" ng-model="string">
+	<button type="submit" ng-click="checkForPalindrome(string)">Palindrome?</button>
 
 </div>
