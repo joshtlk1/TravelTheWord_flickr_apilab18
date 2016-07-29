@@ -3,7 +3,7 @@ var app = angular.module("mySeasons");
 app.controller('summerCtrl', function($scope, $http){
 	$http({
   method: 'GET',
-  url: 'http://history.openweathermap.org/data/2.5/history/city?id={4990729}&type=hour&start={1466467200}&end={1469664000}'
+  url: 'https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=JSON_CALLBACK'
 }).then(function successCallback(response) {
    $scope.season = response.data.season;
   }, function errorCallback(response) {
