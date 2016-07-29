@@ -1,3 +1,9 @@
 #navbar {
 	z-index: 2000;
 }
+
+.black-50 {
+    background: url(../images/black-50-trans.png);
+    color: #fff;
+    padding: 4px 12px;
+    margin: 24px 0;
