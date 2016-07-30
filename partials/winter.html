@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
-
-
 <div class="black-50">
 
-
-	<p class="winter">Hey it's winter and there is nothing to do, enter some text to see if it is a palindrome.</p>
-	<p class="pal">This is a palindrome, "Do geese see God?" also "Never odd or even". Try it!</p>
+	<p class="winter">Hey, are you bored with nothing to do? Try out the palindrome-checker. This is a palindrome: "Do geese see God?" Here's another: "Never odd or even". It's the same thing when it's spelled backwards!<br />
+	Enter a word or phrase below to check if it's a palindrome.<br />
 	<input type="text" ng-model="string">
 	<button type="submit" ng-click="checkForPalindrome(string)">Palindrome?</button>
+	<span ng-bind-html="fantasticString"></span></p>
+
+
  
 </div>
