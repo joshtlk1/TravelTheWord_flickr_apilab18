@@ -1,10 +1,11 @@
 var app = angular.module("mySeasons");
 
-app.controller('winterCtrl', ['$scope', function($scope, $window){
+app.controller('winterCtrl', ['$scope', '$sce', function($scope, $sce) {
+  var message;
   $scope.checkForPalindrome = function(string) { 
 	// palindrome is our string
+  console.log(string);
   // get rid of the empty spaces in the array
-  console.log("hello");
      var palindrome = string.replace(/\s+/g, '');
   // all lowercase letters
      palindrome = palindrome.toLowerCase();
@@ -19,20 +20,14 @@ app.controller('winterCtrl', ['$scope', function($scope, $window){
       if(fantasticString === palindrome) {
 		// if yes return "Great that's a palindrome!"
 		// these should be alerts
-        console.log("A Santa at Nasa! " + palindrome + " is a palindrome!");
-        var success = "A Santa at Nasa! " + palindrome + " is a palindrome!";
-        $window.alert(sucess);
+        message = "A Santa at Nasa! <em>" + string + "</em> is a palindrome!";
       } else {
 		// if no then "A dog! A panic in a pagoda! Try again!"
-      console.log("A dog! A panic in a pagoda! " + palindrome + " is not a palindrome. Try again.");
-      	var failure = "A dog! A panic in a pagoda! " + palindrome + " is not a palindrome. Try again.";
-      	$window.alert(failure);
+      	message = "A dog! A panic in a pagoda! <em>" + string + "</em> is not a palindrome. Try again.";
       }
-  return fantasticString;
+   // return $scope.fantasticString;
+   $scope.fantasticString = message;
 };		
 
 }]);		
-
-
-
 
