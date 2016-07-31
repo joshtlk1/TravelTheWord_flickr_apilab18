@@ -2,11 +2,23 @@
 
 <div class="black-50">
 
-	<p class="winter"><span style=" color:blue; font-size:50; text-transform:uppercase;">Hey</span>,are you bored with nothing to do? Try out the palindrome-checker. This is a palindrome: "Do geese see God?" Here's another: "Never odd or even". It's the same thing when it's spelled backwards!<br />
+	<p class="winter"><span style=" color:blue; font-size:50; text-transform:uppercase;">Hey</span>, are you bored with nothing to do? Try out the palindrome-checker. This is a palindrome: "Do geese see God?" Here's another: "Never odd or even". It's the same thing when it's spelled backwards!<br />
 	<span style='font-weight:bold;'> Enter a word or phrase below to check if it's a palindrome.<br /></span>
 	<input type="text" ng-model="string">
 	<button type="submit" ng-click="checkForPalindrome(string)">Palindrome?</button><br />
 	<span ng-bind-html="fantasticString"></span></p>
 
- 
+
+	Click on your favorite winter travel destination spot:<br />
+
+ 	<a href="#/" ng-click="submitPhoto(photo)"><img src="http://images.chinahighlights.com/allpicture/2014/05/bei-jing1008201c096c_300x225.jpg" alt="The Great Wall in winter" ng-model="photo.first"></a>
+ 	China
+
+
+ 	<a href="#/" ng-click="submitPhoto(photo)"><img src="http://www.netherlands-tourism.com/wp-content/uploads/2013/11/Amsterdam-in-Winter-gracht.jpg" ng-model="photo.second"></a>
+ 	<p ng-model="photo.secondName">Amsterdam</p>
+
+ 	<a href="#/" ng-click="submitPhoto(photo)"><img src="https://www.happytellus.com/img/zermatt/zermatt--switzerland_423.jpg" alt="skiers on the Matterhorn" ng-model="photo.third"></a>
+ 	Switzerland
+
 </div>
