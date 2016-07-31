@@ -1,8 +1,8 @@
 var app = angular.module("mySeasons");
 
-app.controller('summerCtrl', function($scope, $http){
+app.controller('summerCtrl', function($scope, $http, photoFactory){
 	$scope.list;
-
+	$scope.photoObject = photoFactory.returnObject();
 	 $http.jsonp('https://api.flickr.com/services/feeds/photos_public.gne?format=json').success(function (data) {
       
     });
@@ -12,17 +12,6 @@ app.controller('summerCtrl', function($scope, $http){
 	 console.log($scope.photos);
 	}
   
-
-
-
-
-
-
-
-
-
-
-
 
 // 	$http({
 //   method: 'GET',
