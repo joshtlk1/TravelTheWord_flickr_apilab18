@@ -1,10 +1,10 @@
 var app = angular.module("mySeasons");
 
-app.controller('winterCtrl', ['$scope', '$sce', function($scope, $sce) {
+app.controller('winterCtrl', ['$scope', '$sce', function($scope, $sce, photoFactory) {
+  
+
   var message;
   $scope.checkForPalindrome = function(string) { 
-	// palindrome is our string
-  console.log(string);
   // get rid of the empty spaces in the array
      var palindrome = string.replace(/\s+/g, '');
   // all lowercase letters
@@ -29,5 +29,10 @@ app.controller('winterCtrl', ['$scope', '$sce', function($scope, $sce) {
    $scope.fantasticString = message;
 };		
 
-}]);		
+  // $scope.submitPhoto = function(photo) {
+  //   console.log(photo.secondName);
+  // photoFactory.saveObject(photo);
+  // };
 
+
+}]);
