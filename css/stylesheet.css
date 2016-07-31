@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Overlock);
 #navbar {
 	z-index: 2000;
 }
@@ -13,27 +14,43 @@
 		margin-left:auto;
 		margin-right:auto;
 		margin-top:8px;
-		height:440px;
+		height:380px;
 		width:500px;
 		z-index:999;
 		background-color:#fff;
 		opacity:.75;
 		padding:10px;
-		font-size:26px;
+		font-size:24px;
 		color:black;
+		border-radius:10%; 
+		border:3px solid white;
+		-moz-box-shadow:0 0 20px #777777;
+		-webkit-box-shadow:0 0 20px #777777;
+		box-shadow:0 0 20px #777777;
+		font-family: 'Overlock', cursive;
+		text-align:center; 
+
 }
 .winter{
 		margin-left:auto;
 		margin-right:auto;
 		margin-top:8px;
-		height:440px;
+		height:420px;
 		width:500px;
 		z-index:999;
 		background-color:#fff;
 		opacity:.75;
 		padding:10px;
 		color:black;
-		font-size:26px;
+		font-size:24px;
+		border-radius:10%; 
+		border:3px solid white;
+		-moz-box-shadow:0 0 20px #777777;
+		-webkit-box-shadow:0 0 20px #777777;
+		box-shadow:0 0 20px #777777;
+		font-family: 'Overlock', cursive;
+		text-align:center; 
+
 }
 .pal{
 	float:left;
@@ -44,3 +61,24 @@
 button{
 	color:black;
 }	
+h3{
+	text-align:center; 
+}
+li{
+	text-align:center;
+	list-style-type:none;
+	display:block;  
+	font-size:18px;
+}
+/*//ficker photos//*/
+#photo{
+	max-width:300px;
+	max-height:250px; 
+	margin:10px auto 20px auto;
+	align-content: center;
+	float:left;
+	position:relative; 
+	display:inline-block; 
+	border:2px solid black;
+	border-spacing:5px 5px; 
+}
