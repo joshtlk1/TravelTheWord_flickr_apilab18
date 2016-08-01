@@ -1,5 +1,15 @@
 var app = angular.module("mySeasons");
 
+// app.directive('helloDirective', function() {
+// 	return {
+// 		restrict: "E",
+// 		template: "<img src='{{ photo.url }}'/><h1>Your winter spot {{destination}}</h1>",
+// 		replace: false
+
+// 	};
+
+});
+
 app.factory('photoFactory', function($scope) { 
   $scope.submitPhoto = function(photo) {
   photoFactory.saveObject(photo);

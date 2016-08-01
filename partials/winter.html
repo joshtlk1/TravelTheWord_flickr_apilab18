@@ -9,11 +9,12 @@
 	<span ng-bind-html="fantasticString"></span></p>
 
 
+	<div class="align">
 
 	Click on your favorite winter travel destination spot:<br />
 
- 	<a href="#/" ng-click="submitPhoto(photo)"><img src="http://images.chinahighlights.com/allpicture/2014/05/bei-jing1008201c096c_300x225.jpg" alt="The Great Wall in winter" ng-model="photo.first" class="imageClass"></a>
- 	China
+ 	<a href="#/" ng-click="submitPhoto()"><img ng-src="http://images.chinahighlights.com/allpicture/2014/05/bei-jing1008201c096c_300x225.jpg" alt="The Great Wall in winter" ng-model="photo.first" class="imageClass"></a>
+		<h4>China</h4>
 
 
  	<a href="#/" ng-click="submitPhoto(photo)"><img src="http://www.netherlands-tourism.com/wp-content/uploads/2013/11/Amsterdam-in-Winter-gracht.jpg" ng-model="photo.second"></a>
@@ -21,5 +22,6 @@
 
  	<a href="#/" ng-click="submitPhoto(photo)"><img src="https://www.happytellus.com/img/zermatt/zermatt--switzerland_423.jpg" alt="skiers on the Matterhorn" ng-model="photo.third" class="imageClass"></a>
  	Switzerland
+ 	</div>
 
 </div>
