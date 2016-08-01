@@ -1,6 +1,6 @@
 var app = angular.module("mySeasons");
 
-app.controller('winterCtrl', ['$scope', '$sce', function($scope, $sce, photoFactory) {
+app.controller('winterCtrl', ['$scope', '$sce', function($scope, $sce, photoFactory, $http) {
   
 
   var message;
@@ -34,5 +34,5 @@ app.controller('winterCtrl', ['$scope', '$sce', function($scope, $sce, photoFact
   // photoFactory.saveObject(photo);
   };
 
-
 }]);
+  

@@ -63,12 +63,14 @@ button{
 }	
 h3{
 	text-align:center; 
+	color: white;
 }
 li{
 	text-align:center;
 	list-style-type:none;
 	display:block;  
 	font-size:18px;
+	color:white;
 }
 /*//ficker photos//*/
 #photo{

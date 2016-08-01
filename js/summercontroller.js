@@ -26,16 +26,19 @@
   			console.error(error);
   		});
   	}
- 
- 	//  $http.jsonp('https://api.flickr.com/services/feeds/photos_public.gne?format=json').success(function (data) {
+
+});
+
+   
+  //  $http.jsonp('https://api.flickr.com/services/feeds/photos_public.gne?format=json').success(function (data) {
       
   //    });
- 	
- 	// jsonFlickrFeed = function(data){
- 	// $scope.photos = data.items;
- 	// }
   
-// 	$http({
+  // jsonFlickrFeed = function(data){
+  // $scope.photos = data.items;
+  // }
+  
+//  $http({
 //   method: 'GET',
 //   url:"http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?"
 // }).then(function successCallback(response) {
@@ -43,8 +46,6 @@
 //   }, function errorCallback(response) {
 //     console.log(response);
 //   });
-});
-
 
 
 

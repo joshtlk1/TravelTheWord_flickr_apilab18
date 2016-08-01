@@ -1,0 +1,19 @@
+<p class="black-50">
+<ul>
+<h3>Top Spring Destinations:</h3>
+<li>St. Barts - Hawaii - Brazil </li>
+</ul>
+</p>
+
+	<div>
+		<form ng-submit="search()" class="summer">
+			Where is your favorite SPRING destination?
+			<br>
+			<input type="text" placeholder="Search for ..." ng-model="searchTerm">
+			
+		</form>
+		<div ng-repeat="picture in results.photos.photo" class="align">
+		<img ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_b.jpg" class="imageClass">
+		<h4>{{picture.title}}</h4>
+		</div>
+	</div>
