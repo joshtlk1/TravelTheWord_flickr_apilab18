@@ -13,6 +13,20 @@
  		<img src={{photo.media.m}}>  
 	</div>
 
+
+	<div>
+		<form ng-submit="search()" class="summer">
+			Where is your favorite summer destination?
+			<br>
+			<input type="text" placeholder="Search for ..." ng-model="searchTerm">
+			
+		</form>
+		<div ng-repeat="picture in results.photos.photo" class="align">
+		<img ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_b.jpg" class="imageClass">
+		<h4>{{picture.title}}</h4>
+		</div>
+	</div>
+
 </p>
 
 </div>

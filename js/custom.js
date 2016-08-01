@@ -1,5 +1,5 @@
 $('document').ready(function() {
-	$("#wrapper").tubular({videoId: "QEoZfF989Oc",})
+	$("#wrapper").tubular({videoId: "6D-A6CL3Pv8"})
 });
 
 
