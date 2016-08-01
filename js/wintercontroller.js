@@ -29,10 +29,10 @@ app.controller('winterCtrl', ['$scope', '$sce', function($scope, $sce, photoFact
    $scope.fantasticString = message;
 };		
 
-  // $scope.submitPhoto = function(photo) {
-  //   console.log(photo.secondName);
+  $scope.submitPhoto = function(photo) {
+    console.log(photo);
   // photoFactory.saveObject(photo);
-  // };
+  };
 
 
 }]);

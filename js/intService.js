@@ -1,10 +1,10 @@
 var app = angular.module("mySeasons");
 
-
+app.factory('photoFactory', function($scope) { 
   $scope.submitPhoto = function(photo) {
   photoFactory.saveObject(photo);
 
-	app.factory('photoFactory', function() { 
+	// app.factory('photoFactory', function($scope) { 
 	// service logic
 	var emptyObject = {};
 	// function that adds inputs to object
@@ -23,5 +23,7 @@ var app = angular.module("mySeasons");
 		saveObject: saveObject,
 		returnObject: returnObject
 	}
-});
+
+
 };
+});
